@@ -70,13 +70,13 @@ public class myPanel extends JPanel{
     public void drawOther1(){
         if (one ==0){
             one = 1;
-            System.out.println("one is "+one);
+            //System.out.println("one is "+one);
         }
         else if (one ==1){
             one =0;
-            System.out.println("one is "+one);
+            //System.out.println("one is "+one);
         }
-        System.out.println("drawother1 called");
+        //System.out.println("drawother1 called");
     }
     public void drawOther2(){
         if (two == 0){
@@ -85,7 +85,7 @@ public class myPanel extends JPanel{
         else if (two ==1){
             two = 0;
         }
-        System.out.println("drawother2 called");
+        //System.out.println("drawother2 called");
     }
     public void drawOther3(){
         if (three == 0){
@@ -94,7 +94,7 @@ public class myPanel extends JPanel{
         else if (three ==1){
             three = 0;
         }
-        System.out.println("drawother3 called");
+        //System.out.println("drawother3 called");
     }
     public void drawOther4(){
         if (four == 0){
@@ -103,6 +103,6 @@ public class myPanel extends JPanel{
         else if (four ==1){
             four = 0;
         }
-        System.out.println("drawother4 called");
+        //System.out.println("drawother4 called");
     }
 }
