@@ -38,8 +38,26 @@ public class fourCorners extends JFrame implements MouseListener{
         }
     }
     public void mouseClicked(MouseEvent e) {  
-        constantPos(e);
-        //System.out.println("Mouse Clicked");
+        xPos = e.getX();
+        yPos = e.getY();
+        if (xPos<500&&yPos<500){
+            panel.drawOther1();
+            panel.repaint();
+        }
+        if (xPos<1000&&yPos<1000&&xPos>500&&yPos>500){
+            panel.drawOther4();
+            panel.repaint();
+        }
+        if (xPos<500&&yPos>500){
+            panel.drawOther3();
+            panel.repaint();
+        }
+        if (yPos<500&&xPos>500){
+            panel.drawOther2();
+            panel.repaint();
+        }
+        panel.drawOther1();
+        System.out.println("Mouse Clicked"+" "+e.getX()+xPos);
         panel.repaint();  
     }  
     public void mouseEntered(MouseEvent e) {  
