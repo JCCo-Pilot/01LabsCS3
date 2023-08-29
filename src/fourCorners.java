@@ -11,6 +11,7 @@ public class fourCorners extends JFrame implements MouseListener{
     private myPanel panel;
     public fourCorners(){
         panel = new myPanel();
+        this.addMouseListener(this);
         this.setSize(1000,1000);
         this.setVisible(true);
         this.setResizable(false);
@@ -21,6 +22,18 @@ public class fourCorners extends JFrame implements MouseListener{
         yPos = e.getY();
         if (xPos<500&&yPos<500){
             panel.drawOther1();
+            panel.repaint();
+        }
+        if (xPos<1000&&yPos<1000&&xPos>500&&yPos>500){
+            panel.drawOther4();
+            panel.repaint();
+        }
+        if (xPos<500&&yPos>500){
+            panel.drawOther3();
+            panel.repaint();
+        }
+        if (yPos<500&&xPos>500){
+            panel.drawOther2();
             panel.repaint();
         }
     }
