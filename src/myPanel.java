@@ -40,7 +40,7 @@ public class myPanel extends JPanel{
         }
     }
     public void paint(Graphics g){
-        //super.paint(g);
+        super.paint(g);
         graph = g;
         if (one ==0){
             g.drawImage(image11,0,0,500,500,null);
