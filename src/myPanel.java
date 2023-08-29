@@ -40,7 +40,7 @@ public class myPanel extends JPanel{
         }
     }
     public void paint(Graphics g){
-        super.paint(g);
+        //super.paint(g);
         graph = g;
         if (one ==0){
             g.drawImage(image11,0,0,500,500,null);
@@ -70,33 +70,39 @@ public class myPanel extends JPanel{
     public void drawOther1(){
         if (one ==0){
             one = 1;
+            System.out.println("one is "+one);
         }
-        if (one ==1){
+        else if (one ==1){
             one =0;
+            System.out.println("one is "+one);
         }
+        System.out.println("drawother1 called");
     }
     public void drawOther2(){
         if (two == 0){
             two = 1;
         }
-        if (two ==1){
+        else if (two ==1){
             two = 0;
         }
+        System.out.println("drawother2 called");
     }
     public void drawOther3(){
         if (three == 0){
             three = 1;
         }
-        if (three ==1){
+        else if (three ==1){
             three = 0;
         }
+        System.out.println("drawother3 called");
     }
     public void drawOther4(){
         if (four == 0){
             four = 1;
         }
-        if (four ==1){
+        else if (four ==1){
             four = 0;
         }
+        System.out.println("drawother4 called");
     }
 }
